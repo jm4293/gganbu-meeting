@@ -1,0 +1,61 @@
+.stock-overlay {
+  position: absolute;
+  z-index: 1000;
+}
+
+.stock-overlay:nth-child(2) {
+  top: 5%;
+  left: 5%;
+}
+
+.stock-overlay:nth-child(3) {
+  top: 5%;
+  left: 40%;
+  transform: translateX(-50%);
+}
+
+.stock-overlay:nth-child(4) {
+  top: 15%;
+  right: 12%;
+}
+
+.stock-card {
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stock-card.positive {
+  background: #ef4444;
+}
+
+.stock-card.negative {
+  background: #3b82f6;
+}
+
+.stock-card.loading {
+  background: #6b7280;
+}
+
+.change-rate {
+  font-size: 32px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+/* 반응형 - 모바일 */
+@media (max-width: 1024px) {
+  .stock-card {
+    padding: 4px 8px;
+  }
+
+  .change-rate {
+    font-size: 18px;
+  }
+}
+
+.loading-text {
+  color: #9ca3af;
+  text-align: center;
+}

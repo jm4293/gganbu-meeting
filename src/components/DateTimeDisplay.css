@@ -1,0 +1,23 @@
+.datetime-display {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+  padding: 12px 16px;
+  z-index: 10;
+}
+
+.datetime-display .date {
+  font-size: 14px;
+  color: #9ca3af;
+  margin-bottom: 4px;
+}
+
+.datetime-display .time {
+  font-size: 20px;
+  font-weight: 700;
+  color: #f3f4f6;
+  font-family: 'Courier New', monospace;
+}

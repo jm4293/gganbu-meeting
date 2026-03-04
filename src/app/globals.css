@@ -1,0 +1,115 @@
+@import "tailwindcss";
+
+:root {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* 다크모드 전용 */
+  color-scheme: dark;
+  color: #f3f4f6;
+  background-color: #111827;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #111827;
+  color: #f3f4f6;
+  overflow: hidden;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.app {
+  display: flex;
+  height: 100vh;
+  background: #111827;
+}
+
+.main-content {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.main-background {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-wrapper {
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.background-image {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  object-fit: contain;
+}
+
+.connection-status {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  z-index: 100;
+}
+
+.connection-status.connected {
+  color: #10b981;
+}
+
+.connection-status.disconnected {
+  color: #ef4444;
+}
+
+/* 모바일 반응형 (768px 이하) */
+@media (max-width: 768px) {
+  .app {
+    flex-direction: column;
+  }
+
+  .main-content {
+    height: 30vh !important;
+    order: 1;
+  }
+
+  .chat-panel {
+    width: 100%;
+    height: 70vh !important;
+    border-left: none;
+    border-top: 1px solid #374151;
+    order: 2;
+  }
+}
