@@ -75,7 +75,7 @@ export const metadata: Metadata = {
     images: ["/preview.png"],
   },
   verification: {
-    google: "E9zDQXXuO2_eJB1WprGOEvaTHyUcMq4UaaObuOfTY5E",
+    google: "C0fUyK85-VYIFWVx7qzWWTBAaT8mYF4gyShpX-B9kc0",
   },
   icons: {
     icon: "/favicon.svg",
