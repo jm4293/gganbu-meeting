@@ -21,3 +21,10 @@
   color: #f3f4f6;
   font-family: 'Courier New', monospace;
 }
+
+/* 반응형 - 모바일 */
+@media (max-width: 768px) {
+  .datetime-display {
+    display: none;
+  }
+}

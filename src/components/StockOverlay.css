@@ -15,12 +15,12 @@
 }
 
 .stock-overlay:nth-child(4) {
-  top: 15%;
+  top: 10%;
   right: 12%;
 }
 
 .stock-card {
-  padding: 8px 16px;
+  padding: clamp(4px, 0.6vw, 8px) clamp(8px, 1.2vw, 16px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -39,19 +39,28 @@
 }
 
 .change-rate {
-  font-size: 32px;
+  font-size: clamp(14px, 2.5vw, 32px);
   font-weight: 700;
   color: #ffffff;
+  white-space: nowrap;
 }
 
 /* 반응형 - 모바일 */
-@media (max-width: 1024px) {
-  .stock-card {
-    padding: 4px 8px;
+@media (max-width: 768px) {
+  .stock-overlay:nth-child(2) {
+    top: 50%;
+    left: 5%;
   }
 
-  .change-rate {
-    font-size: 18px;
+  .stock-overlay:nth-child(3) {
+    top: 40%;
+    left: 40%;
+    transform: translateX(-50%);
+  }
+
+  .stock-overlay:nth-child(4) {
+    top: 55%;
+    right: 10%;
   }
 }
 
