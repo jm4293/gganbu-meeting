@@ -18,6 +18,13 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.svg",
   },
+  viewport: {
+    width: "device-width",
+    initialScale: 1,
+    maximumScale: 1, // iOS 자동 줌인 방지
+    userScalable: false, // 사용자 줌 방지
+    viewportFit: "cover", // iOS 노치 대응
+  },
 };
 
 export default function RootLayout({

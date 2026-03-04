@@ -36,12 +36,20 @@ body {
   overflow: hidden;
   min-width: 320px;
   min-height: 100vh;
+  /* 모바일 브라우저 pull-to-refresh 방지 */
+  overscroll-behavior-y: contain;
+  /* iOS Safari 100vh 이슈 해결 */
+  min-height: -webkit-fill-available;
 }
 
 .app {
   display: flex;
   height: 100vh;
+  /* iOS Safari 100vh 이슈 해결 */
+  height: -webkit-fill-available;
   background: #111827;
+  /* 모바일 스크롤 방지 */
+  touch-action: pan-y;
 }
 
 .main-content {
@@ -98,12 +106,16 @@ body {
 @media (max-width: 768px) {
   .app {
     flex-direction: column;
+    /* 모바일에서 고정 높이 사용 */
+    height: 100dvh; /* dvh는 dynamic viewport height - 주소창 제외 */
   }
 
   .main-content {
     height: 40vh !important;
     order: 1;
     padding-top: 40px;
+    /* 스크롤 방지 */
+    overflow: hidden;
   }
 
   .chat-panel {
@@ -112,5 +124,7 @@ body {
     border-left: none;
     border-top: 1px solid #374151;
     order: 2;
+    /* 내부에서만 스크롤 */
+    overflow: hidden;
   }
 }
