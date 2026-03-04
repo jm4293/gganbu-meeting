@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "깐부회동",
-  description: "깐부회동 엔비디아 퍼센트",
+  description: "깐부회동 퍼센트",
   keywords: [
     "깐부회동",
     "깐부",
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "깐부회동",
-    description: "깐부회동 엔비디아 퍼센트",
+    description: "깐부회동 퍼센트",
     url: "https://gganbu-meeting.vercel.app",
     siteName: "깐부회동",
     images: [
@@ -71,7 +71,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "깐부회동",
-    description: "깐부회동 엔비디아 퍼센트",
+    description: "깐부회동 퍼센트",
     images: ["/preview.png"],
   },
   verification: {
@@ -95,7 +95,7 @@ const jsonLd = {
   name: "깐부회동",
   alternateName: ["깐부 회동", "Gganbu Meeting", "gganbu-meeting"],
   url: "https://gganbu-meeting.vercel.app",
-  description: "깐부회동 엔비디아 퍼센트",
+  description: "깐부회동 퍼센트",
   applicationCategory: "CommunicationApplication",
   operatingSystem: "Web",
   inLanguage: "ko-KR",
