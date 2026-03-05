@@ -119,13 +119,14 @@
 }
 
 .chat-input {
-  flex: 1;
+  /* flex: 1; */
+  width: 100%;
   background: #374151;
   border: 1px solid #4b5563;
   border-radius: 6px;
   padding: 10px 12px;
   color: #f3f4f6;
-  font-size: 16px; /* iOS 자동 줌인 방지를 위해 16px 이상 필수 */
+  font-size: 16px;
   outline: none;
   transition: border-color 0.2s;
 }
@@ -144,15 +145,17 @@
 }
 
 .chat-send-btn {
+  /* width: 60px; */
   background: #3b82f6;
   color: white;
   border: none;
   border-radius: 6px;
   padding: 10px 20px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
   cursor: pointer;
   transition: background 0.2s;
+  white-space: nowrap;
 }
 
 .chat-send-btn:hover:not(:disabled) {
