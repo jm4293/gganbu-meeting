@@ -107,23 +107,18 @@ body {
   .app {
     flex-direction: column;
     /* 모바일에서 고정 높이 사용 */
-    height: 100dvh; /* dvh는 dynamic viewport height - 주소창 제외 */
+    height: 100vh;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
   }
 
   .main-content {
-    height: 40vh !important;
+    height: 40vh;
     order: 1;
     /* 스크롤 방지 */
     overflow: hidden;
-  }
-
-  .chat-panel {
-    width: 100%;
-    height: 60vh !important;
-    border-left: none;
-    border-top: 1px solid #374151;
-    order: 2;
-    /* 내부에서만 스크롤 */
-    overflow: hidden;
+    flex-shrink: 0;
   }
 }
